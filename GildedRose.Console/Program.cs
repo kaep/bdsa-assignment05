@@ -2,13 +2,13 @@
 
 namespace GildedRose.Console
 {
-    class Program
+    public class Program
     {
-        IList<Item> Items;
-        static void Main(string[] args)
+        public IList<Item> Items;
+        public static void Main(string[] args)
         {
             System.Console.WriteLine("OMGHAI!");
-
+        
             var app = new Program()
                           {
                               Items = new List<Item>
@@ -33,6 +33,8 @@ namespace GildedRose.Console
             System.Console.ReadKey();
 
         }
+  
+
 
         public void UpdateQuality()
         {
