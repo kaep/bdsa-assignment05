@@ -105,7 +105,6 @@ namespace GildedRose.Tests
         {
             var output = new StringWriter(); 
             System.Console.SetOut(output); 
-
             Program.Main(new string[]{});
             
             Assert.Equal("OMGHAI!".Trim(), output.GetStringBuilder().ToString().Trim());
