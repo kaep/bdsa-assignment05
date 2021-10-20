@@ -9,12 +9,14 @@ namespace GildedRose.Tests
 {
     public class TestAssemblyTests
     {
+
         private readonly Program _app;
         public TestAssemblyTests()
         {
             var app = new Program()
             {
                 Items = new List<Item>
+
                                           {
                                               new Item {Name = "+5 Dexterity Vest", SellIn = 10, Quality = 20},
                                               new Item {Name = "Aged Brie", SellIn = 2, Quality = 0},
@@ -28,6 +30,7 @@ namespace GildedRose.Tests
                                                   },
                                               new Item {Name = "Conjured Mana Cake", SellIn = 3, Quality = 6}
                                           }
+
 
             };
             _app = app;
@@ -81,6 +84,7 @@ namespace GildedRose.Tests
         {
             var sulfaras = _app.Items[3];
             Assert.Equal(80, sulfaras.Quality);
+
             Assert.Equal(0, sulfaras.SellIn);
             _app.UpdateQuality();
             Assert.Equal(80, sulfaras.Quality);
@@ -102,12 +106,14 @@ namespace GildedRose.Tests
             Assert.Equal(20, backstage.Quality);
             _app.UpdateQuality();
             Assert.Equal(21, backstage.Quality);
+
         }
 
         [Fact]
         public void UpdateQuality_backstagepass_quality_increases_by_2_when_between_10_and_5_days()
         {
             var backstage = _app.Items[4];
+
             backstage.SellIn = 10;
             Assert.Equal(20, backstage.Quality);
             _app.UpdateQuality();
@@ -160,6 +166,7 @@ namespace GildedRose.Tests
             System.Console.SetIn(input);
             Program.Main(new string[] { });
             Assert.Equal("OMGHAI!".Trim(), output.GetStringBuilder().ToString().Trim());
+
         }
     }
 }

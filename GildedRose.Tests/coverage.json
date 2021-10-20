@@ -69,26 +69,32 @@
             },
             {
               "Line": 41,
+
               "Offset": 36,
               "EndOffset": 38,
               "Path": 0,
               "Ordinal": 0,
+
               "Hits": 90
             },
             {
               "Line": 41,
+
               "Offset": 36,
               "EndOffset": 67,
               "Path": 1,
               "Ordinal": 1,
+
               "Hits": 18
             },
             {
               "Line": 41,
+
               "Offset": 70,
               "EndOffset": 72,
               "Path": 0,
               "Ordinal": 2,
+
               "Hits": 36
             },
             {
@@ -483,6 +489,7 @@
               "Path": 1,
               "Ordinal": 3,
               "Hits": 18
+
             }
           ]
         }
@@ -490,19 +497,24 @@
       "GildedRose.Console.Item": {
         "System.String GildedRose.Console.Item::get_Name()": {
           "Lines": {
+
             "155": 714
+
           },
           "Branches": []
         },
         "System.Int32 GildedRose.Console.Item::get_SellIn()": {
           "Lines": {
+
             "157": 385
+
           },
           "Branches": []
         },
         "System.Int32 GildedRose.Console.Item::get_Quality()": {
           "Lines": {
             "159": 441
+
           },
           "Branches": []
         }

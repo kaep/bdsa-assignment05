@@ -8,7 +8,7 @@ namespace GildedRose.Console
         public static void Main(string[] args)
         {
             System.Console.WriteLine("OMGHAI!");
-
+        
             var app = new Program()
             {
                 Items = new List<Item>
@@ -33,6 +33,8 @@ namespace GildedRose.Console
             System.Console.ReadLine();
 
         }
+  
+
 
         public void UpdateQuality()
         {
