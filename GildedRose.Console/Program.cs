@@ -30,7 +30,7 @@ namespace GildedRose.Console
 
             app.UpdateQuality();
 
-            System.Console.ReadKey();
+            System.Console.ReadLine();
 
         }
   
