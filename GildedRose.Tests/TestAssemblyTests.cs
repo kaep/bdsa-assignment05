@@ -157,6 +157,18 @@ namespace GildedRose.Tests
             Assert.Equal(2, cake.Quality);
         }
 
-        
+        [Fact]
+        public void Main_print_of_items_identical_to_print_from_before_refactor()
+        {
+            var output = new StringWriter();
+            System.Console.SetOut(output); 
+            
+            Program.Main(new string[0]); 
+
+            var directory = Directory.GetCurrentDirectory();
+            var expected = System.IO.File.ReadAllText(@"..\..\..\main_text.txt");
+
+            Assert.Equal(expected, output.GetStringBuilder().ToString()); 
+        }
     }
 }
