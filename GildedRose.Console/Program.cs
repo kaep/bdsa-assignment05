@@ -121,7 +121,7 @@ namespace GildedRose.Console
                     }
                 }
             }
-            if(item.SellIn < 0)
+            if(item.SellIn <= 0)
             {
                 item.Quality = 0; 
             }
