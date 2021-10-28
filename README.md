@@ -1,3 +1,4 @@
+![example workflow](https://github.com/kaeppen/bdsa-assignment05/actions/workflows/buildtest.yaml/badge.svg)
 # Assignment #5
 
 ## C#: Gilded Rose Refactoring Kata
