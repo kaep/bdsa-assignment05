@@ -166,7 +166,7 @@ namespace GildedRose.Tests
             Program.Main(new string[0]); 
 
             var directory = Directory.GetCurrentDirectory();
-            var expected = System.IO.File.ReadAllText(@"..\..\..\main_text.txt");
+            var expected = System.IO.File.ReadAllText(@"../../../main_text.txt");
 
             Assert.Equal(expected, output.GetStringBuilder().ToString().Trim()); 
         }
