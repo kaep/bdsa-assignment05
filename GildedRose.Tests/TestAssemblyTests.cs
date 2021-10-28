@@ -157,16 +157,6 @@ namespace GildedRose.Tests
             Assert.Equal(2, cake.Quality);
         }
 
-        [Fact]
-        public void Main_prints_omghai()
-        {
-            var output = new StringWriter();
-            System.Console.SetOut(output);
-            var input = new StringReader(System.ConsoleKey.Enter.ToString());
-            System.Console.SetIn(input);
-            Program.Main(new string[] { });
-            Assert.Equal("OMGHAI!".Trim(), output.GetStringBuilder().ToString().Trim());
-
-        }
+        
     }
 }
