@@ -93,7 +93,7 @@ namespace GildedRose.Console
             {
                 item.Quality = item.Quality - 1;
             }
-            if (item.Quality > 0 && item.SellIn < 0)
+            if (item.Quality > 0 && item.SellIn <= 0)
             {
                 item.Quality--;
             }
